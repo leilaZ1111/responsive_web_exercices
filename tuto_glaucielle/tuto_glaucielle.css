@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.flex-div {
+  display: flex;
+  gap: 1rem;
+}
+
+.content {
+  padding: 1rem;
+  height: fit-content;
+}
+
+.small {
+  background-color: rgb(99, 97, 97);
+  color: aliceblue;
+}
+.medium {
+  background-color: rgb(188, 135, 236);
+}
+.large {
+  background-color: antiquewhite;
+  color: black;
+}
+
+@media (width > 768px) {
+  .container {
+    background-color: rgb(4, 49, 118);
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media (300px < width < 768px) {
+  .container {
+    background-color: rgb(4, 67, 4);
+  }
+
+  .content {
+    height: auto;
+  }
+  .small {
+    flex: 2;
+  }
+  .medium {
+    flex: 1;
+  }
+  .large {
+    margin-top: 1rem;
+  }
+}
+
+@media (width <= 300px) {
+  .container {
+    background-color: rgb(242, 20, 20);
+    gap: 1rem;
+  }
+
+  .flex-div {
+    flex-direction: column;
+  }
+  .large {
+    margin-top: 1rem;
+  }
+}
+
+
+
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .container {
+      width: 100vw;
+      min-height: 100vh;
+      padding: 1rem;
+      display: flex;
+    }
+    
+    .test {
+      display: flex;
+    }
+    
+    .content {
+      padding: 1rem;
+      border-radius: 1rem;
+      height: fit-content;
+    }
+    
+    .small {
+      background-color: rgb(99, 97, 97);
+      color: aliceblue;
+    }
+    .medium {
+      background-color: rgb(188, 135, 236);
+    }
+    .large {
+      background-color: antiquewhite;
+      color: black;
+    }
+    
+    @media (width > 768px) {
+      .container {
+        background-color: rgb(0, 100, 249);
+      }
+      .container h1 {
+        font-size: 3rem;
+        padding-bottom: 1rem;
+      }
+      .container p {
+        font-size: 2rem;
+      }
+    }/* .small,
+      .medium {
+        display: none;
+      }
+
+    
+    @media (300px < width < 768px) {
+      .container {
+        background-color: rgb(7, 79, 7);
+        font-size: 6rem;
+        flex-direction: column;
+      }
+      .container h1 {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+      }
+      .container p {
+        font-size: 1.8rem;
+      }
+      .test {
+        width: 100%;
+      }
+
+      .small,
+      .large {
+        display: none;
+      }
+    }
+    
+    @media (width <= 300px) {
+      .container {
+        background-color: red;
+        font-size: 3rem;
+        flex-direction: column;
+      }
+      .test {
+        flex-direction: column;
+      }
+      .container h1 {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+      }
+      .container p {
+        font-size: 1rem;
+      }
+    /* .medium,
+      .large {
+        display: none;
+      }
+    } */
