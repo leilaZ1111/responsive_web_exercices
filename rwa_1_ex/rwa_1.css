@@ -1,0 +1,38 @@
+.h_smartphone {
+    font-size: 16px
+}
+
+.h_tablet {
+    font-size: 18px
+}
+
+.h_desktop {
+    font-size: 20px
+}
+
+
+/* large devices */
+@media (width >= 768px) {
+    body {background: blue;}
+    #small, #medium {
+        display: none;
+      }
+    }
+
+  /* medium devices */
+  @media (300px < width < 768px) {
+body {background: green;}
+#small, #large {
+    display: none;
+  }
+}
+
+/* small devices */
+@media (width <= 300px) {
+    body {background: red;}
+    #medium, #large {
+        display: none;
+      }
+    }
+    
+

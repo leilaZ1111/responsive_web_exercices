@@ -1,0 +1,54 @@
+body {
+  display: flex;
+}
+
+.h_smartphone {
+    font-size: 16px
+}
+
+.h_tablet {
+    font-size: 18px
+}
+
+.h_desktop {
+    font-size: 20px
+}
+
+
+/* large devices */
+@media (width >= 768px) {
+    body {background: purple;}
+    /* #small, #medium {
+        display: none;
+      } */
+      .container {display: flex;
+      }
+    }
+
+  /* medium devices */
+  @media (300px < width < 768px) {
+body {background: green;
+flex-wrap: wrap;} 
+.container { 
+  display: flex;}
+  #small {
+    flex: 2;
+  }
+  #medium {
+    flex: 1;
+  }
+/* #small, #large {
+    display: none;
+  } */
+}
+
+/* small devices */
+@media (width <= 300px) {
+    body {background: red;
+    flex-direction: column;}
+    /* #medium, #large {
+        display: none;
+      } */
+    }
+    
+
