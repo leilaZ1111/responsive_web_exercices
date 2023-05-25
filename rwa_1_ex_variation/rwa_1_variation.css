@@ -21,16 +21,22 @@ body {
     /* #small, #medium {
         display: none;
       } */
+      .container {display: flex;
+      }
     }
 
   /* medium devices */
   @media (300px < width < 768px) {
 body {background: green;
 flex-wrap: wrap;} 
-.container {
-  background: red; 
-  display: flex;
-}
+.container { 
+  display: flex;}
+  #small {
+    flex: 2;
+  }
+  #medium {
+    flex: 1;
+  }
 /* #small, #large {
     display: none;
   } */
